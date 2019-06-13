@@ -1,0 +1,18 @@
+.testBtn{
+    margin: 5px;
+}
+.userDiv{
+    float: right;
+}
+
+.classImg{
+    display: block;
+}
+
+#button-div {
+    border: 2px solid red;
+}
+
+#gif-dump{
+    border: 2px solid green;
+}
