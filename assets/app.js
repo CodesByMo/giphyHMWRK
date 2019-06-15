@@ -77,14 +77,22 @@ $(document).ready(function () {
                 // Looping through each result item
                 for (var i = 0; i < 10; i++) {
                     var div = $("<div>");
-                    div.addClass("col-8");
+                    div.addClass("col-4")
+                    // div.addClass("col-8");
+                    // div.css('width', '50px');
+                    // div.css('height', '250px')
+
 
 
                     // Creating and storing an image tag
                     var imageUrl = response.data[i].images.original.url;
-                    var imgRating = response.data[i].rating;
+                    var imgRating = "Rating: " + response.data[i].rating.toUpperCase();
 
                     var searchImage = $("<img>").attr("src", imageUrl);
+                    searchImage.css("width", "100%")
+                    // searchImage.css("height", "100%")
+
+                    // searchImage.addClass('float-left')
                     var p = $("<p>");
                     p.text(imgRating);
 
